@@ -1,6 +1,10 @@
-package code;
+package GUI;
 // Withdrawal.java
 // Represents a withdrawal ATM transaction
+
+import code.BankDatabase;
+import code.Euro;
+import code.Transaction;
 
 public class Withdrawal extends Transaction
 {

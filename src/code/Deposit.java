@@ -2,6 +2,10 @@ package code;
 // Deposit.java
 // Represents a deposit ATM transaction
 
+import GUI.DepositSlot;
+import GUI.Keypad;
+import GUI.Screen;
+
 public class Deposit extends Transaction
 {
    private double amount; // amount to deposit
