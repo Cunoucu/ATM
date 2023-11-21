@@ -1,10 +1,9 @@
-package code;
+package GUI;
 // Deposit.java
 // Represents a deposit ATM transaction
 
-import GUI.DepositSlot;
-import GUI.Keypad;
-import GUI.Screen;
+import Business_logic.Euro;
+import Database.BankDatabase;
 
 public class Deposit extends Transaction
 {
