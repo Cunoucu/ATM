@@ -1,10 +1,6 @@
-package GUI;
+package code;
 // BalanceInquiry.java
 // Represents a balance inquiry ATM transaction
-
-import code.BankDatabase;
-import code.Euro;
-import code.Transaction;
 
 public class BalanceInquiry extends Transaction
 {
@@ -23,19 +19,19 @@ public class BalanceInquiry extends Transaction
       Screen screen = getScreen();
 
       // get the available balance for the account involved
-      Euro availableBalance = 
+      double availableBalance = 
          bankDatabase.getAvailableBalance( getAccountNumber() );
 
       // get the total balance for the account involved
-      Euro totalBalance = 
+      double totalBalance = 
          bankDatabase.getTotalBalance( getAccountNumber() );
       
       // display the balance information on the screen
       screen.displayMessageLine( "\nBalance Information:" );
       screen.displayMessage( " - Available balance: " ); 
-      screen.displayDollarAmount( availableBalance.getValoreDouble() );
+      screen.displayDollarAmount( availableBalance );
       screen.displayMessage( "\n - Total balance:     " );
-      screen.displayDollarAmount( totalBalance.getValoreDouble() );
+      screen.displayDollarAmount( totalBalance );
       screen.displayMessageLine( "" );
    } // end method execute
 } // end class BalanceInquiry
