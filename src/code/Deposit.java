@@ -51,7 +51,7 @@ public class Deposit extends Transaction
                "enclosed cash and your checks clear." );
             
             // credit account to reflect the deposit
-            bankDatabase.credit( getAccountNumber(), amount ); 
+            bankDatabase.credit( getAccountNumber(), new Euro(amount) ); 
          } // end if
          else // deposit envelope not received
          {
