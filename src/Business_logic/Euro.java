@@ -1,4 +1,4 @@
-package code;
+package Business_logic;
 
 public class Euro {
 
@@ -19,6 +19,10 @@ public class Euro {
 
 	public long getValore() {
 		return valore;
+	}
+
+	public double getValoreDouble() {
+		return (double)valore/100;
 	}
 
 	public Euro somma(Euro e) {
