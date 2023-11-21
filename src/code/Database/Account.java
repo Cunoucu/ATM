@@ -1,8 +1,8 @@
-package Database;
+package code.Database;
 // Account.java
 // Represents a bank account
 
-import Business_logic.Euro;
+import code.Business_logic.Euro;
 
 public class Account 
 {
