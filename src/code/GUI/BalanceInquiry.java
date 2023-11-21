@@ -1,10 +1,9 @@
-package GUI;
+package code.GUI;
 // BalanceInquiry.java
 // Represents a balance inquiry ATM transaction
 
-import code.BankDatabase;
-import code.Euro;
-import code.Transaction;
+import code.Business_logic.Euro;
+import code.Database.BankDatabase;
 
 public class BalanceInquiry extends Transaction
 {
