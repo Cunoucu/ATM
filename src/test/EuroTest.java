@@ -1,7 +1,7 @@
 package test;
 
 import org.junit.*;
-import code.Euro;
+import code.Business_logic.Euro;
 
 public class EuroTest {
     Euro e1, e2, e3, e4, e5;
